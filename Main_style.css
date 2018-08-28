@@ -1,0 +1,195 @@
+* {font-family: Arial Narrow,Arial,sans-serif;}
+
+
+body {
+	background-color: #e4f5ef;
+}
+
+
+#topic_header{
+	background: #f2f2f2;
+
+	display: table;
+	padding: 10px 0px 0px 10px;
+	border-bottom: 1px solid #ccc;
+
+	position: fixed;
+	top: 95px;
+	left: 0;
+	width: 100%;
+	height: 3em;
+}
+
+#ul_toc{
+	list-style-type: square;
+	line-height: 1.4em;
+}
+
+object, video {border: solid 2px lightgray;}
+
+
+.title { color: #3ab4b3; font-weight: bold; padding: 0 40px 0 30px;}
+
+p {line-height: 1.5; font-size: 1.2em; padding: 0 40px 0 60px; text-align: justify;}
+
+.title_Block { background-color: navy; color: white; font-weight: bold; border-radius:0px 15px 0px 15px; padding: 2px 30px 2px 10px; display: inline;}
+
+#navigation {float: right; margin-right: 50px;}
+
+.thumbnail {
+	line-height: 70px;
+	text-decoration: none; font-size: 1.1em; font-weight: bold; color: crimson;
+}
+.thumbnail img {
+	margin: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+#main_pannel {
+	width: 80%;  height: 300px; margin-right: auto; margin-left: auto;
+	background-color: #dbf18c; border-radius: 5px;
+
+}
+
+
+#main_pannel_link {
+	text-decoration: none; font-size: 1.2em;
+	width: 80px; height: 30px;
+	background-color: #019ea5; color: white;
+	display: inline; padding: 5px 15px 5px 15px;
+	border-style: outset;  border-radius: 5px;
+}
+
+#my-dialog {
+  border: solid 5px #ddd; border-style: outset;
+  background-color: #dbf18c;
+  border-radius: 5px;
+  width: 120px; height: 120px; padding: 0px;
+  position: fixed; top: 12%; right: 2%;
+  display: none; margin: auto;
+}
+.modal {
+            background: #019ea5;
+            color: white;
+            border-radius: 5%;
+            width: 70px; height: 30px;
+            font-size: 15px; margin: 0; padding:0;
+}
+*:focus {outline:none}
+
+#myTune {
+	display: none;
+}
+
+
+#videoContainer {
+	width: 50%; height: auto;
+}
+p.question {
+  font-size:20px; margin-left: 20px;
+  color: #2E2E2E;
+   margin-left:5px; margin-bottom: 0;
+
+
+}
+
+h2.quizHeader {
+  font-weight:normal;
+  font-size:25px;
+  line-height: 27px;
+  margin: 24px 0 12px 0;
+  padding: 0 0 4px 0;
+  border-bottom: 1px solid #a2a2a2;
+}
+
+h2.quizScore{
+  font-size:25px;
+}
+
+div.quizAnswers{
+  font-size:16px;
+  color: #424242;
+  padding: 4px 0 4px 0;
+}
+
+label {
+  font-size: 1.1em;
+  color: #424242;
+  vertical-align:top;
+}
+
+input.answer[type="radio"] {
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+input.quizSubmit[type="submit"] {
+    background:#c8102e; padding: 5px 20px 5px 20px;
+    width:auto; color: white;
+    border-radius: 5px;
+ }
+#submition_pane {
+  display: none;
+
+}
+input.quizSubmit[type="submit"]:hover {
+  color: #ffffff;
+  background: #680f11;
+  text-decoration: none;
+}
+
+
+.submitter {
+	  width:85px;
+}
+
+.hide {
+	  display:none;
+}
+
+.button.start {
+            background:#c8102e; padding: 5px 20px 5px 20px;
+            width: 180px; height: 40px; color: white;
+            border-radius: 5px; font-size: 1em;
+}
+
+#submitButton {
+            width: 150px; height: 40px; margin-left: -50px; font-size: 1em;
+}
+.button.modal {
+            background:black; padding: 5px 20px 5px 20px;
+            width:auto; color: white;
+            border-radius: 5px; font-size: 1em;
+}
+.button.navigation {
+            background:navy; padding: 5px 20px 5px 20px;
+            width: 150px; height: 40px; color: white;
+            border-radius: 5px; display: none; font-size: 1em;
+        }
+
+.questionCard {
+  display: none;
+  padding: 0 10px 10px 0; margin-top: 10px;
+  width: 80%;  height: 250px; margin-right: auto; margin-left: auto; border: lightgray;
+  background-color: #dbf18c; border-style: outset;  border-radius: 5px;
+}
+
+#exit_strategy {
+  display: none;
+}
+
+#userScore {
+  color: navy;
+}
+
+#score-dialog {
+  border: solid 5px #ddd; border-style: outset;
+  background-color: lightgray;
+  border-radius: 5px;
+  width: 250px; height: 150px; padding: 20px;
+  position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+  display: none; margin: auto;
+}
+
+#Quiz_wrapper {margin: 0 20px 0 20px;}
+#myTuneObj {display: none;}

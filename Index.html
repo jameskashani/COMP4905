@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<!-- saved from url=(0024)http://www.abc-defg.com/ -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>COMP 4905</title>
+<link href="img/favicon.ico" rel="icon" type="image/x-icon">
+<noscript>Your browser does not support JavaScript, please enable JavaScript to activate the functions of this page!</noscript>
+<style>
+* {font-family: Arial Narrow,Arial,sans-serif; }
+body {background-color: #f9fbff;}
+#wrapper {padding: 30px; width:85%; height: 350px; background-color: #f0f4ff; margin: 0 auto 0 auto;
+border:10px #fcfcfc;	border-style:ridge;  border-radius:3px 30px 3px 3px; font-size: 1.4vw;}
+a[id="link"]:link {color: black !important;  margin: 0px; text-decoration: none;}
+a[id="link"]:visited { color: black !important;  margin: 0px;}
+a[id="link"]:hover {text-decoration: none !important;  margin: 0px; color: blue !important; }
+tr:hover { background-color: #f9fbff;}
+#footer {position:relative;  color: #006699; height: 40px; padding: 10px; font-size: 1.1vw;}
+</style>
+   	<img style=" margin-left: 65px;" alt="COMP4905" src="img/Header_01.png" width="70%"/>
+</head>
+<body>
+<div id="wrapper">
+  <table style="border-collapse: collapse; width: 90%; margin: 0 auto;" >
+   	<tr style="border-bottom-style: inset; color: #006699;">
+     	<th align="left">Topics</th>
+     	<th align="left">Duration</th>
+     	<th align="left">Your score</th>
+ 	</tr>
+	<tr style="color: navy">
+		<td style="color: navy"><a id="link"
+		style="cursor: pointer;" onclick="javascript: window.location = 'Chp_01.html';">
+  				<span style="color: red;">&#9632;</span>&ensp;Topic 01:&ensp; Declare Arrays in Java</a></td>
+  		<td>15 Minutes</td>
+    	<td Id="chapter_01">Click topic to start ...</td>
+	</tr>
+	<tr style="color: navy">
+		<td style="color: navy"><a id="link"
+		style="cursor: pointer;" onclick="javascript: window.location = 'Chp_02.html';">
+	  			<span style="color: red;">&#9632;</span>&ensp;Topic 02:&ensp; Practice Arrays in Java</a></td>
+	  	<td>12 Minutes</td>
+    	<td Id="chapter_02">Click topic to start ...</td>
+	</tr>
+ </table>
+</div>
+<script>
+window.onload = function() {
+   var your_score_01 = localStorage.getItem("score_chapter_01");
+   if (your_score_01 === null) {your_score_01 = "Click topic to start ..."}
+   document.getElementById("chapter_01").innerHTML = your_score_01;
+
+   var your_score_02 = localStorage.getItem("score_chapter_02");
+   if (your_score_02 === null) {your_score_02 = "Click topic to start ..."}
+   document.getElementById("chapter_02").innerHTML = your_score_02;
+
+}
+</script>
+<div id="footer"><center>Copyright 2018 - Carleton University. <strong> Project COMP 4905</strong></center></div>
+</body>
+</html>
